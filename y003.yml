@@ -7,4 +7,4 @@
   - name: Copy ansible inventory file to client
 #    copy: src=/etc/ansible/hosts dest=/etc/ansible.hosts.test 
     copy: src=/etc/ansible/hosts dest=/etc/ansible.hosts.test owner=root group=root mode=644 backup=yes
-### ok   - apt: name=geany state=present
+## ok   - apt: name=geany state=present
