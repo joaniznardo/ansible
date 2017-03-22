@@ -1,10 +1,10 @@
 ---
-- hosts: vms
-  remote_user: joan 
+- hosts: aula20
+  remote_user: joan.iznardo 
   become: yes
   become_method: sudo
   tasks:
   - name: Copy ansible inventory file to client
 #    copy: src=/etc/ansible/hosts dest=/etc/ansible.hosts.test 
-    copy: src=/etc/ansible/hosts dest=/etc/ansible.hosts.test owner=root group=root mode=644 backup=yes
+    copy: src=/tmp/anydesk_2.7.1-1_amd64.deb dest=/tmp/anydesk_2.7.1-1_amd64.deb owner=root group=root mode=644 backup=yes
 ## ok   - apt: name=geany state=present

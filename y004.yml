@@ -1,10 +1,12 @@
 ---
 - hosts: aula20 
-  remote_user: joan 
+  remote_user: joan.iznardo
   become: yes
   become_method: sudo
   tasks:
   - name: Install a .deb package from the internet.
     apt:
-      deb: https://download.anydesk.com/linux/anydesk_2.7.1-1_amd64.deb
+##      deb: https://download.anydesk.com/linux/anydesk_2.7.1-1_amd64.deb
+      deb: /tmp/anydesk_2.7.1-1_amd64.deb
+##      deb: https://download.anydesk.com/linux/anydesk_2.7.1-1_amd64.deb?_ga=1.131596554.468842356.1489401716
 
